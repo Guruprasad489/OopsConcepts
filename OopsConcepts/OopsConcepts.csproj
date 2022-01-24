@@ -52,6 +52,8 @@
     <Compile Include="Interface\Ianimal.cs" />
     <Compile Include="Interface\Itiger.cs" />
     <Compile Include="Interface\Pigs.cs" />
+    <Compile Include="PassByValueAndRefernece\PassByReference.cs" />
+    <Compile Include="PassByValueAndRefernece\PassByValue.cs" />
     <Compile Include="Polymorphism\MethodOverLoading\Addition.cs" />
     <Compile Include="Polymorphism\MethodOverWriting\Animal.cs" />
     <Compile Include="Polymorphism\MethodOverWriting\Employee.cs" />

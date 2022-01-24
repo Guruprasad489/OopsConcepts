@@ -12,11 +12,18 @@ namespace OopsConcepts.ClassAndObjects
         public string color;
         public int year;
         public int price;
-        public void Autopilot()    //Method
+        public void Autopilot()      //Method
         {
             Console.WriteLine("Car has amazing autopilot mode");
         }
 
+        public Car()                //Constructor
+        {
+            model = "Tata";
+            color = "Blue";
+            year = 2020;
+            price = 1500000;
+        }
         public void ElectricVehicle()
         {
             Console.WriteLine("Car runs on electricity");

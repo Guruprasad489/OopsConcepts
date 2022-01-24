@@ -3,6 +3,7 @@ using OopsConcepts.ClassAndObjects;
 using OopsConcepts.Encapsulation;
 using OopsConcepts.Inheritance;
 using OopsConcepts.Interface;
+using OopsConcepts.PassByValueAndRefernece;
 using OopsConcepts.Polymorphism.MethodOverLoading;
 using OopsConcepts.Polymorphism.MethodOverWriting;
 using System;
@@ -26,11 +27,10 @@ namespace OopsConcepts
             Tesla.Autopilot();
             Console.WriteLine("{0} {1} {2} {3}", Tesla.model, Tesla.color, Tesla.year, Tesla.price);
 
+            Console.WriteLine("\n Constructor concept....");
             Car Tata = new Car();
-            Tata.model = "Nexon";
-            Tata.year = 2021;
             Tata.ElectricVehicle();
-            Console.WriteLine("{0} {1} {2}", Tata.model, Tata.year, Tata.price);  //Tata.price is not decared
+            Console.WriteLine(Tata.model+" "+Tata.color+" "+Tata.year+" "+Tata.price); 
 
             Console.WriteLine("\n Inheritance....");
             Bus bus = new Bus();
@@ -74,6 +74,15 @@ namespace OopsConcepts
             Pigs pigs = new Pigs();
             pigs.AnimalSound();
             pigs.Details();
+
+            Console.WriteLine("\n Pass By Value....");
+            int i = 100;
+            Console.WriteLine(i);
+            PassByValue.ChangeValue(i);
+            Console.WriteLine(i);
+
+            Console.WriteLine("\n Pass By Reference....");
+            PassByReference.TestRef();
         }
     }
 }
